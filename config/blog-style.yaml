@@ -1,0 +1,43 @@
+blog:
+  language: ko
+  tone:
+    calm: true
+    concise: true
+    didactic: false
+    promotional: false
+  post:
+    numbered_sections:
+      min: 3
+      max: 8
+    sentences_per_section:
+      preferred_min: 3
+      preferred_max: 7
+    title_words:
+      preferred_min: 2
+      preferred_max: 7
+    structure:
+      - situation
+      - observation
+      - change
+      - meaning
+  writing:
+    prefer_concrete_scene_before_abstraction: true
+    allow_keyword_repetition: true
+    minimize_adjectives: true
+    minimize_adverbs: true
+    avoid_listicle_voice: true
+    avoid_moralizing: true
+    avoid_overexplaining: true
+  illustration:
+    count_per_post: 1
+    monochrome: true
+    medium: "thin pen or pencil line drawing"
+    background: "warm ivory paper"
+    subject_area_ratio: "20-40%"
+    negative_space: "large"
+    detail_level: "minimal"
+    text_in_image: false
+    speech_bubbles: false
+    infographic: false
+    3d: false
+    gradients: false
