@@ -1,43 +1,55 @@
 blog:
-  language: ko
-  tone:
-    calm: true
-    concise: true
-    didactic: false
-    promotional: false
-  post:
-    numbered_sections:
-      min: 3
-      max: 8
-    sentences_per_section:
-      preferred_min: 3
-      preferred_max: 7
-    title_words:
-      preferred_min: 2
-      preferred_max: 7
-    structure:
-      - situation
-      - observation
-      - change
-      - meaning
-  writing:
-    prefer_concrete_scene_before_abstraction: true
-    allow_keyword_repetition: true
-    minimize_adjectives: true
-    minimize_adverbs: true
-    avoid_listicle_voice: true
-    avoid_moralizing: true
-    avoid_overexplaining: true
-  illustration:
-    count_per_post: 1
-    monochrome: true
-    medium: "thin pen or pencil line drawing"
-    background: "warm ivory paper"
-    subject_area_ratio: "20-40%"
-    negative_space: "large"
-    detail_level: "minimal"
-    text_in_image: false
-    speech_bubbles: false
-    infographic: false
-    3d: false
-    gradients: false
+  format: short_observation_essay
+  paragraphs_min: 3
+  paragraphs_max: 8
+  numbered_paragraphs: true
+
+writing:
+  sentence_style: short_plain
+  flow:
+    - scene
+    - observation
+    - change
+    - meaning
+  avoid:
+    - lecture_tone
+    - motivational_slogans
+    - excessive_adjectives
+    - repeated_summary
+
+illustration:
+  house_style: note_cartoon
+  reference_mode: broad_visual_language_only
+  line:
+    color: near_black
+    weight: medium_hand_drawn
+    regularity: slightly_wobbly
+  background:
+    preferred:
+      - white
+      - very_light_gray
+      - pale_blue_gray
+    avoid_default:
+      - warm_ivory_paper
+      - beige_horizon_scene
+  spot_color:
+    max_count: 1
+    families:
+      - muted_blue
+      - brick_orange
+      - olive_green
+      - mustard_yellow
+      - muted_plum
+  composition:
+    subject_area_percent: 25-55
+    center_is_default: false
+    vary_between_posts: true
+  text_in_image: false
+  forbid:
+    - exact_artist_replication
+    - exact_reference_composition
+    - cute_sd_character
+    - webtoon_panels
+    - photorealism
+    - 3d_render
+    - dramatic_lighting
